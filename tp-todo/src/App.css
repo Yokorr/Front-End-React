@@ -1,0 +1,24 @@
+.App {
+  max-width: 400px;
+  padding-top: 300px;
+  margin: 50px auto;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+input {
+  padding: 8px;
+  width: 70%;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.todo-item {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 4px;
+}
