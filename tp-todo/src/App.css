@@ -1,24 +1,106 @@
+/* Design global */
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
 .App {
-  max-width: 400px;
-  padding-top: 300px;
+  max-width: 600px;
   margin: 50px auto;
-  font-family: sans-serif;
-  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-
-input {
-  padding: 8px;
-  width: 70%;
+h1 {
+  color: #1a73e8;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
-button {
-  padding: 8px;
+/* Barre de navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  border-radius: 12px 12px 0 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5f6368;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #1a73e8;
+}
+
+/* Formulaire d'ajout */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #1a73e8;
+}
+
+/* Cartes de tâches */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.todo-card:hover {
+  transform: translateY(-2px);
+  background: #fff;
+  border-color: #1a73e8;
+}
+
+.todo-text {
+  font-size: 1rem;
+}
+
+/* Bouton Supprimer */
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
 }
 
-.todo-item {
-  background: #f4f4f4;
-  padding: 10px;
-  border-radius: 4px;
+.delete-btn:hover {
+  background: #cc0000;
 }

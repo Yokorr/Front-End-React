@@ -1,17 +1,13 @@
-const TodoItem = ({ task, toggleTask, deleteTask }) => {
+const TodoItem = ({ task, deleteTodo }) => { 
   return (
-    <div className="todo-item" style={{ display: 'flex', gap: '10px', marginBottom: '5px' }}>
-      <span 
-        onClick={() => toggleTask(task.id)}
-        style={{ 
-          textDecoration: task.completed ? 'line-through' : 'none', 
-          cursor: 'pointer',
-          flexGrow: 1 
-        }}
+    <div className="todo-card">
+      <span className="todo-text">{task.text}</span>
+      <button 
+        className="delete-btn" 
+        onClick={() => deleteTodo(task.id)} 
       >
-        {task.text}
-      </span>
-      <button onClick={() => deleteTask(task.id)}>Supprimer</button>
+        Supprimer
+      </button>
     </div>
   );
 };
