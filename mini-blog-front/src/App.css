@@ -1,0 +1,63 @@
+/* --- Mise en page globale --- */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* --- Navigation (Espacée) --- */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Espace bien large entre les liens */
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+/* --- Formulaire (Vertical) --- */
+.article-form {
+  display: flex;
+  flex-direction: column; /* Force l'affichage de haut en bas */
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.article-form input, 
+.article-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* --- Boutons MyArticles --- */
+.actions {
+  display: flex;
+  gap: 15px; /* Espace entre les deux boutons */
+  margin-top: 10px;
+}
+
+.btn-edit {
+  background-color: #4CAF50 !important; /* Vert */
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-delete {
+  background-color: #f44336 !important; /* Rouge */
+  color: white !important;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
